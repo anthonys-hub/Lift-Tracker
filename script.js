@@ -22,59 +22,62 @@ const exercises = [
 ]
 
 function allExercises() {
+    document.getElementById('list').innerHTML = '';
+    const targetDiv = document.getElementById('list')
 
-    for (exercise of exercises) {
-        const body = document.body
-        const div = document.createElement('div')
+
+    for (const exercise of exercises) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name + exercise.day + exercise.muscleGroup + exercise.sets + exercise.reps)
+        h1.textContent = exercise.name + exercise.day + exercise.muscleGroup + exercise.sets + exercise.reps
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
     }
 
 
 }
 
 function pushDay() {
+    document.getElementById('list').innerHTML = '';
     const push = exercises.filter(exercise => exercise.day === 'Push')
+    const targetDiv = document.getElementById('list')
 
-    for (exercise of push) {
-        const body = document.body
-        const div = document.createElement('div')
+
+    for (const exercise of push) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name)
+        h1.textContent = exercise.name
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
+
 
     }
 
 }
 
 function pullDay() {
+    document.getElementById('list').innerHTML = '';
     const pull = exercises.filter(exercise => exercise.day === 'Pull')
+    const targetDiv = document.getElementById('list')
 
-    for (exercise of pull) {
-        const body = document.body
-        const div = document.createElement('div')
+    for (const exercise of pull) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name)
+        h1.textContent = exercise.name
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
 
     }
 
 }
 
 function legDay() {
+    document.getElementById('list').innerHTML = '';
     const leg = exercises.filter(exercise => exercise.day === 'Leg Day')
+    const targetDiv = document.getElementById('list')
 
-    for (exercise of leg) {
-        const body = document.body
-        const div = document.createElement('div')
+    for (const exercise of leg) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name)
+        h1.textContent = exercise.name
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
 
     }
 
@@ -82,15 +85,16 @@ function legDay() {
 
 
 function cardio() {
+    document.getElementById('list').innerHTML = '';
+    const targetDiv = document.getElementById('list')
+
     const cardio = exercises.filter(exercise => exercise.day === 'Cardio Day')
 
-    for (exercise of cardio) {
-        const body = document.body
-        const div = document.createElement('div')
+    for (const exercise of cardio) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name)
+        h1.textContent = exercise.name
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
 
     }
 
@@ -98,32 +102,35 @@ function cardio() {
 
 
 function upperDay() {
+    document.getElementById('list').innerHTML = '';
     const push = exercises.filter(exercise => exercise.day === 'Push')
     const pull = exercises.filter(exercise => exercise.day === 'Pull')
+    const targetDiv = document.getElementById('list')
 
 
-    for (exercise of push.concat(pull)) {
-        const body = document.body
-        const div = document.createElement('div')
+    for (const exercise of push.concat(pull)) {
         const h1 = document.createElement('h1')
-        body.append(div)
-        body.append(h1)
-        h1.append(exercise.name)
-
+        h1.textContent = exercise.name
+        targetDiv.append(h1)
+        h1.classList.add('text-white', 'font-bold', 'p-5');
     }
 
 }
 
 function restDay() {
-    const body = document.body
-    const div = document.createElement('div')
+    document.getElementById('list').innerHTML = '';
+    const targetDiv = document.getElementById('list')
+
+
     const h1 = document.createElement('h1')
 
 
-    body.append(div)
-    body.append(h1)
+
+    targetDiv.append(h1)
 
     h1.textContent = 'Rest up!'
+    h1.classList.add('text-white', 'font-bold', 'p-5');
+
 
 
 

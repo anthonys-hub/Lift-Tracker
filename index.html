@@ -10,63 +10,73 @@
 
 </head>
 
-<body class="bg-red-700">
 
+<body class="bg-[url('anastase-maragos-9dzWZQWZMdE-unsplash.jpg')] bg-cover  bg-center  w-full">
 
-
-
-    <div class="flex justify-center font-bold py-3 text-4xl">
+    <div class=" flex justify-center text-white font-bold py-3 text-4xl">
         My Workouts
     </div>
 
-    <div class="mt-10 flex gap-5  justify-center ">
+
+    <section class="bg-gray-300 max-w-400 w-full flex justify-center items-center">
+
+        <div class=" flex items-center gap-3 justify-center ">
 
 
-        <button onclick="allExercises()" class="bg-gray-300 w-25 h-10 text-white">
-            All Exercises
-        </button>
+            <button onclick="allExercises()"
+                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                All Exercises
+            </button>
 
-        <button onclick="pushDay()" class="bg-gray-300 w-25 h-10 text-white">
-            Push Day
-        </button>
+            <button onclick="pushDay()"
+                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300  w-25 h-10 text-white">
+                Push Day
+            </button>
 
-        <button onclick="pullDay()" class="bg-gray-300 w-25 h-10 text-white">
-            Pull Day
-        </button>
+            <button onclick="pullDay()"
+                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                Pull Day
+            </button>
 
-        <button onclick="legDay()" class="bg-gray-300 w-25 h-10 text-white">
-            Leg Day
-        </button>
+            <button onclick="legDay()"
+                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                Leg Day
+            </button>
 
-        <button onclick="cardio()" class="bg-gray-300 w-25 h-10 text-white">
-            Cardio Day
-        </button>
+            <button onclick="cardio()"
+                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                Cardio Day
+            </button>
 
-        <button onclick="upperDay()" class="bg-gray-300 w-25 h-10 text-white">
-            Upper Day
-        </button>
+            <button onclick="upperDay()"
+                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                Upper Day
+            </button>
 
-        <button onclick="cardio()" class="bg-gray-300 w-25 h-10 text-white">
-            Cardio Day
-        </button>
-        <button onclick="restDay()" class="bg-gray-300 w-25 h-10 text-white">
-            Rest Day
-        </button>
-
-
-
-
-
-
-
-
-    </div>
-
+            <button onclick="cardio()"
+                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                Cardio Day
+            </button>
+            <button onclick="restDay()"
+                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                Rest Day
+            </button>
 
 
 
 
 
+
+
+
+    </section>
+
+    <section class='flex justify-center items-center'>
+
+        <div class=" bg-black max-w-150 max-h-400 flex rounded-lg justify-center items-center flex-col mt-20" id="list">
+
+        </div>
+    </section>
 
 
 </body>
