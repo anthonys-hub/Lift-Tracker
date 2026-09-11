@@ -28,7 +28,7 @@ function allExercises() {
 
     for (const exercise of exercises) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name + exercise.day + exercise.muscleGroup + exercise.sets + exercise.reps
+        h1.textContent = `${exercise.name} - ${exercise.day} Day  - ${exercise.muscleGroup} - Sets: ${exercise.sets} - Reps: ${exercise.reps}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
     }
@@ -44,7 +44,7 @@ function pushDay() {
 
     for (const exercise of push) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name
+        h1.textContent = `${exercise.name} Sets: ${exercise.sets} Reps: ${exercise.reps}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
 
@@ -60,7 +60,7 @@ function pullDay() {
 
     for (const exercise of pull) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name
+        h1.textContent = `${exercise.name} Sets: ${exercise.sets} Reps: ${exercise.reps}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
 
@@ -75,7 +75,7 @@ function legDay() {
 
     for (const exercise of leg) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name
+        h1.textContent = `${exercise.name} Sets: ${exercise.sets} Reps: ${exercise.reps}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
 
@@ -92,7 +92,7 @@ function cardio() {
 
     for (const exercise of cardio) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name
+        h1.textContent = `${exercise.name}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
 
@@ -110,7 +110,7 @@ function upperDay() {
 
     for (const exercise of push.concat(pull)) {
         const h1 = document.createElement('h1')
-        h1.textContent = exercise.name
+        h1.textContent = `${exercise.name} Sets: ${exercise.sets} Reps: ${exercise.reps}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
     }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Lift Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="script.js"></script>
@@ -11,56 +11,57 @@
 </head>
 
 
-<body class="bg-[url('anastase-maragos-9dzWZQWZMdE-unsplash.jpg')] bg-cover  bg-center  w-full">
+<body class="bg-[url('anastase-maragos-9dzWZQWZMdE-unsplash.jpg')] bg-cover bg-no-repeat h-screen bg-center  w-full">
 
     <div class=" flex justify-center text-white font-bold py-3 text-4xl">
         My Workouts
     </div>
 
 
-    <section class="bg-gray-300 max-w-400 w-full flex justify-center items-center">
+    <section class="flex lg:flex-col sm:flex-row items-center">
 
-        <div class=" flex items-center gap-3 justify-center ">
 
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
 
             <button onclick="allExercises()"
-                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer rounded-xl hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10  font-bold text-black">
                 All Exercises
             </button>
 
             <button onclick="pushDay()"
-                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300  w-25 h-10 text-white">
+                class="hover:cursor-pointer  rounded-xl hover:bg-gray-100 hover:text-black bg-gray-300  w-25 h-10  font-bold text-black">
                 Push Day
             </button>
 
             <button onclick="pullDay()"
-                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer  rounded-xl hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 font-bold text-black">
                 Pull Day
             </button>
 
             <button onclick="legDay()"
-                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer rounded-xl hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 font-bold text-black">
                 Leg Day
             </button>
 
             <button onclick="cardio()"
-                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer  rounded-xl hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10  font-bold text-black">
                 Cardio Day
             </button>
 
             <button onclick="upperDay()"
-                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer rounded-xl hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 font-bold text-black">
                 Upper Day
             </button>
 
             <button onclick="cardio()"
-                class="hover:cursor-pointer hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer  rounded-xl hover:text-black hover:bg-gray-100  bg-gray-300 w-25 h-10 font-bold text-black">
                 Cardio Day
             </button>
             <button onclick="restDay()"
-                class="hover:cursor-pointer hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10 text-white">
+                class="hover:cursor-pointer rounded-xl hover:bg-gray-100 hover:text-black bg-gray-300 w-25 h-10  font-bold text-black">
                 Rest Day
             </button>
+        </div>
 
 
 
@@ -69,14 +70,14 @@
 
 
 
-    </section>
 
-    <section class='flex justify-center items-center'>
-
-        <div class=" bg-black max-w-150 max-h-400 flex rounded-lg justify-center items-center flex-col mt-20" id="list">
+        <div class=" bg-gray-700 max-w-120 max-h-400  rounded-xl justify-center items-center flex flex-col mt-5"
+            id="list">
 
         </div>
+
     </section>
+
 
 
 </body>
