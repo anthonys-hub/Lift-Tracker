@@ -27,6 +27,10 @@ function allExercises() {
 
 
     for (const exercise of exercises) {
+        if (exercise.day === 'Cardio Day') {
+            exercise.sets = 'N/A'
+            exercise.reps = 'N/A'
+        }
         const h1 = document.createElement('h1')
         h1.textContent = `${exercise.name} - ${exercise.day} Day  - ${exercise.muscleGroup} - Sets: ${exercise.sets} - Reps: ${exercise.reps}`
         targetDiv.append(h1)
@@ -91,10 +95,12 @@ function cardio() {
     const cardio = exercises.filter(exercise => exercise.day === 'Cardio Day')
 
     for (const exercise of cardio) {
+
         const h1 = document.createElement('h1')
         h1.textContent = `${exercise.name}`
         targetDiv.append(h1)
         h1.classList.add('text-white', 'font-bold', 'p-5');
+
 
     }
 
